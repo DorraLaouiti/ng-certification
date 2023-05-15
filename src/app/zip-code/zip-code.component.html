@@ -1,0 +1,11 @@
+<h4>US Weather App</h4>
+<div class="container-fluid">
+
+<div class="well">
+  <h2>Enter a zipcode:</h2>
+  <input class="form-control" [(ngModel)]="zipCode" placeholder="Zipcode" type="text" id="addLocation">
+  <br>
+  <button (click)="addZipCode()" class="btn btn-primary" id="addLocationBtn">
+    Add location
+  </button>
+</div>
