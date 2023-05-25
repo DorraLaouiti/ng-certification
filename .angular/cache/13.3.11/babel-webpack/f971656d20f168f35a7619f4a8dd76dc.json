@@ -1,0 +1,1 @@
+{"ast":null,"code":"export {}; // const routes: Routes = [\n//   // other routes\n//   { path: 'forecast/:zipCode', component: ForecastComponent },\n// ];\n// @NgModule({\n//   imports: [RouterModule.forRoot(routes)],\n//   exports: [RouterModule]\n// })\n// export class AppRoutingModule { \n// }","map":null,"metadata":{},"sourceType":"module"}
