@@ -1,0 +1,22 @@
+<hr>
+<h4>Template for 5-day forecast page:</h4>
+<div class="container-fluid">
+  <div class="panel panel-default"  *ngFor="let forecasts of forecast">
+    <div class="panel-heading">
+      <h3 class="panel-title">5-day forecast for {{forecasts.nameCity}}</h3>
+
+    </div>
+    <ul class="list-group" >
+      <li class="list-group-item">
+        {{forecasts.DayName}}:
+        {{forecasts.weatherDescription}}
+        - Min:   {{forecasts.lowTemperature}}
+        - Max:   {{forecasts.highTemperature}}
+
+
+        <img  class="icon" *ngIf="forecasts.weatherDescription !== ''" [src]="weatherIconUrl" alt="Weather Icon" style="width: 30px; height: 30px;">
+      </li>
+    </ul>
+  </div>
+  <button (click)="navigateToHome()" class="btn btn-success" tabindex="0" id="mainPageBtn">&lt; Back to main page</button>
+</div> 

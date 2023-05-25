@@ -1,3 +1,7 @@
+<head>
+ 
+  <base href="">
+</head>
 <h4>US Weather App</h4>
 <div class="container-fluid">
 
@@ -9,3 +13,28 @@
     Add location
   </button>
 </div>
+
+
+<div >
+  <div class="well flex" *ngFor="let weatherData of weatherConditions">
+      <div>
+        <h3>{{ weatherData.nameCity }}</h3>
+        <h4>{{ weatherData.mainWeatherDescription }}</h4>
+        <h4>Temperatures today:</h4> {{ weatherData.temp }}
+        <p>
+           <br>
+          - Max {{ weatherData.maxTemperature }} <br>
+          - Min {{ weatherData.minTemperature }}
+        </p>
+        <p>
+          <button (click)="navigateToForecast(weatherData.zipCode)">Go to 5-days Forecast</button>
+
+        </p>
+      </div>
+      <div>
+        <span class="close">×</span>
+        <img *ngIf="weatherData.mainWeatherDescription !== ''" [src]="weatherIconUrl" alt="Weather Icon" style="width: 200px; height: 200px;">
+      
+      </div>
+   </div>
+  </div>
