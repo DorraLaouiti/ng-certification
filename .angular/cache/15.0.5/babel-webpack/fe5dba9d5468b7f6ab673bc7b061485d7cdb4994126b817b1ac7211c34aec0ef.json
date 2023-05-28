@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var environment = {\n  production: true,\n  apiUrl: 'https://api.openweathermap.org',\n  debugMode: false\n  // Other production-specific configurations\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

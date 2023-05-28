@@ -1,0 +1,1 @@
+{"ast":null,"code":"var WeatherDetails = /** @class */function () {\n  function WeatherDetails() {}\n  return WeatherDetails;\n}();\nexport { WeatherDetails };","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}
