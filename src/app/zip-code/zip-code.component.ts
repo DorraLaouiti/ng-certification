@@ -15,7 +15,6 @@ export class ZipCodeComponent implements OnInit {
   weatherConditions: WeatherDetails[] = [];
   test: WeatherDetails;
   weatherCondition: string
-  public picturesUrl : string = "https://www.angulartraining.com/images/weather/"
   weatherIconUrl:string;
   constructor(private weatherService: WeatherService , private sharedService: SharedService,private router: Router) {}
 
