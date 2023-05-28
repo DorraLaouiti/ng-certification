@@ -1,12 +1,12 @@
 <hr>
 <h4>Template for 5-day forecast page:</h4>
 <div class="container-fluid">
-  <div class="panel panel-default"  *ngFor="let forecasts of forecast">
+  <div class="panel panel-default"  >
     <div class="panel-heading">
-      <h3 class="panel-title">5-day forecast for {{forecasts.nameCity}}</h3>
+      <h3 class="panel-title">5-day forecast for {{cityname}}</h3>
 
     </div>
-    <ul class="list-group" >
+    <ul class="list-group" *ngFor="let forecasts of forecast" >
       <li class="list-group-item">
         {{forecasts.DayName}}:
         {{forecasts.weatherDescription}}

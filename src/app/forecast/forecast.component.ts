@@ -14,6 +14,7 @@ export class ForecastComponent implements OnInit {
   zipCode: string;
   forecast: Forecast[] = [];
   weatherIconUrl: string;
+  cityname:string = "";
   constructor(
     private route: ActivatedRoute,
     private weatherService: WeatherService,
@@ -32,6 +33,7 @@ export class ForecastComponent implements OnInit {
       .subscribe((data: Forecast[]) => {
         this.forecast = data;
         this.setWeatherIcon(data[0].weatherDescription);
+        this.cityname = data[0].nameCity;
       });
   }
 
